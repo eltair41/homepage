@@ -1,0 +1,8 @@
+.header {
+    border-bottom: 2px solid black;
+    margin: 10px 10px;
+}
+
+.header__mainHeader {
+    text-shadow: 2px -4px 4px rgba(40, 15, 97, 0.8);
+}

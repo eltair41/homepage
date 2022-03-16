@@ -1,0 +1,43 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    max-width: 1000px;
+    text-align: center;
+    background-color: #c7c2c2;
+    font-family: 'Lato', sans-serif;
+    font-size:15px;
+    line-height: 1.5;
+    padding: 15px 15px;
+    margin: auto;
+}
+
+.body--dark{
+    color: white;
+    background-color: #332f2f;
+}
+
+.body--fontSize {
+    font-size: 20px;
+}
+
+.container {
+    overflow-x: auto;
+    padding: 5px;
+}
+
+.button {
+    background-color: teal;
+    color: #eee;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    padding: 15px;
+    font-size: 15px;
+    margin: 10px 10px;
+}
+

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muzyczna strona</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body class="body js-body">
+    <nav class="navigation">
+        <ul class="navigation__list">
+            <li class="navigation__listItem"><a class="navigation__link" href="#first-section">O mnie</a></li>
+            <li class="navigation__listItem"><a class="navigation__link" href="#second-section">Lista zakupów - tabela</a></li>
+            <li class="navigation__listItem"><a class="navigation__link--special" href="#third-section">Kilka słów o albumach</a></li>
+            <li class="navigation__listItem"><a class="navigation__link" href="#fourth-section">Podsumowanie</a></li>
+        </ul>
+    </nav>
+    <button class="button js-button">Włącz <span class="js-themeName">ciemny</span> motyw</button> 
+    <button class="button js-fontButton"><span class="js-secondThemeName">Zwiększ</span> czcionkę</button>
+    <header class="header">
+        <h1 class="header__mainHeader">Moja muzyczna strona :)</h1>
+    </header>
+    <main>
+        <section id="first-section" class="section">
+            <h2 class="section__header">O mnie</h2>
+            <p>Cześć! Jestem Karol, mieszkam w Warszawie.<br> Interesuję się wieloma rzeczami od sportu przez gry komputerowe aż po muzykę, którą <em>śmiało</em> mogę nazwać moim <strong>głównym</strong> zainteresowaniem.</p>
+            <p><strong>Nie wyobrażam</strong> sobie życia bez muzyki, dltaego też staram się czerpać z niej ile tylko mogę jak również nieustannie poszukuję nowych inspiracji.</p>
+        </section>
+        <section id="second-section" class="section">
+            <h2 class="section__header">Lista zakupów - tabela</h2>
+            <p>Pozwoliłem sobie stworzyć tabelę z listą moich przyszłych zakupów. Pozycje, które tam zamieściłem stanowią pewien swoisty fundament mojego muzycznego stylu na przykladzie, którego inspiruję się i tworzę.</p>
+            <div class="container">
+                <table class="table">
+                    <caption class="table__caption">Albumy do kupienia</caption>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="col">Tytuł</th>
+                        <th class="table__cell table__cell--header" scope="col">Wykonawca</th>
+                        <th class="table__cell table__cell--header" scope="col">Rok</th>
+                        <th class="table__cell table__cell--header" scope="col">Cena</th>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row">The Black Album</th>
+                        <td class="table__cell">Metallica</td>
+                        <td class="table__cell">1991</td>
+                        <td class="table__cell">57,99zł</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row">Senjutsu</th>
+                        <td class="table__cell">Iron Maiden</td>
+                        <td class="table__cell">2021</td>
+                        <td class="table__cell">67,49zł</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row">Blackbird</th>
+                        <td class="table__cell">Alter Bridge</td>
+                        <td class="table__cell">2007</td>
+                        <td class="table__cell">55,60zł</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row">Ace of Spades</th>
+                        <td class="table__cell">Motorhead</td>
+                        <td class="table__cell">1980</td>
+                        <td class="table__cell">65,50zł</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row" colspan="3">RAZEM</th>
+                        <td class="table__cell">246,58zł</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section id="third-section" class="section">
+            <h2 class="section__header">Kilka słów o albumach</h2>
+            <h3>The Black Album</h3>
+            <p>Na pierwszy ogień wpada <i>"The Black Album" Metallici</i>, czyli jeden z najbardziej rozpoznawalnych krążków jakie zespół zechciał nam pokazać. Płyta zawiera, świetne utwory od których zapiera dech w piersiach zaczynając od <i>"Enter Sandman"</i> wciągającego w swój mroczny i tajemiczy klimat a kończąc na <i>"Nothing Else Matters"</i>, czyli najbardziej rozpoznawalnej balladzie tego zespołu. Dla mnie pozycja niezbędna dla wszystkich, którzy znają albo chcieliby poznać <i>Metallicę</i>.</p>
+            <img width="200" height="200" src="https://i.postimg.cc/T3YSKXxg/blackalbum.jpg" alt="The Black Album">
+            <hr>
+            <h3>Senjutsu</h3>
+            <p>Na drugiej pozycji znajduje sie najświeższy album <i>Iron Maiden</i>, który <em>bez wątpienia</em> pokazuje, że zespół w dalszym ciągu utrzymuje swoj mistrzowski i niepowtarzalny poziom. Utwór promujący nową płytę <i>"The Writing on the Wall"</i> porwał mnie od samego początku utwierdzając mnie tylko w przekonaniu jak genialne muszą być osoby zdolne storzyć coś takiego. Moja kolekcja <strong>bez tego</strong> egzemplarza nigdy nie byłaby kompletna.</p>
+            <img width="200" height="200" src="https://i.postimg.cc/05YHZN27/senjutsu.jpg" alt="Senjutsu">
+            <hr>
+            <h3>Blackbird</h3>
+            <p>Trzeci album posiada dla mnie wartość sentymentalną, gdyż towarzyszył mi w wielu ważnych momentach w życiu. Co tu dużo mówić, niebywałe umiejętości wokalne, doskonałe <i>riffy</i> gitarowe, poprostu arcydzieło. Utwory wręcz <em>zabierają</em> i w żadnym wypadku nie mają ochoty oddać aż do samego końca, a piosenka promująca <i>"Blackbird"</i> zwyczajnie odebrała mi mowę oczywiście w pozytywnym znaczeniu. Jeśli ktoś jeszcze nie zna <i>Alter Bridge</i>, gorąco polecam i gwarantuję moc wrażeń.</p>
+            <img width="200" height="200" src="https://i.postimg.cc/kX81DXL2/blackbird.jpg" alt="Blackbird">
+            <hr>
+            <h3>Ace of Spades</h3>
+            <p>Listę zamyka album <i>"Ace of Spades"</i> starych dobrych, <em>heavymetalowych</em> <i>Motorhead</i>. Na początku od razu trzeba wspomnieć o tym, że niewazne o którym krązku tej trzyosobowej grupy jest mowa, <strong>absolutnie zawsze</strong> ikoniczny i niemożliwy do podrobienia wokal Lemmy'ego nadaje tego obrzydliwie dobrego i ciężkiego klimatu. Album ten wybrałem, gdyż zwyczajnie uwielbiam utwór promujący, oczywiście nie umniejszając pozostałym. To jest mój dopełniający element, zachęcam do odsłuchu o każdej porze dnia i nocy.</p>
+            <img width="200" height="200" src="https://i.postimg.cc/wBhgVptM/ace-of-spades.jpg" alt="Ace of Spades">
+        </section>
+        <section id="fourth-section" class="section">
+            <h2 class="section__header">Podsumowanie</h2>
+            <p>Czas na krótkie podsumowanie.<br> Krótko mówiąc czeka mnie troszke wydatków w najbliższym czasie, ale w żadnym wypadku nie odbiera mi to zapału. Jakby znalazła się osoba, która pragnęłaby mocnej zgłębic temat odnośnie wymienionych wyżej albumów to takie informacje znajdzie niewątpliwie tutaj</p>
+            <p><a class="section__link"
+                target="_blank"
+                href="https://pl.wikipedia.org/wiki/Metallica_(album)"
+                title="Więcej informacji o tym albumie"
+                rel="noreferrer noopener">The Black Album</a>, 
+                <a class="section__link"
+                target="_blank"
+                href="https://pl.wikipedia.org/wiki/Senjutsu"
+                title="Więcej informacji o tym albumie"
+               rel="noreferrer noopener">Senjutsu</a>,
+                <a class="section__link"
+                target="_blank"
+                href="https://en.wikipedia.org/wiki/Blackbird_(Alter_Bridge_album)"
+                title="Więcej informacji o tym albumie"
+                rel="noreferrer noopener">Blackbird</a>,
+                <a class="section__link"
+                target="_blank"
+                href="https://pl.wikipedia.org/wiki/Ace_of_Spades"
+                title="Więcej informacji o tym albumie"
+                rel="noreferrer noopener">Ace of Spades</a>.
+            </p>
+            <p>Linki otwierają się w nowej karcie :)</p>    
+        </section>
+    </main>
+    <footer class="footer">Oto moja stopka :) Dziękuję serdecznie za uwagę</footer>
+</body>
+
+</html>
