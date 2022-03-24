@@ -1,22 +1,31 @@
-let body = document.querySelector(".js-body");
-let backgroundColorButton = document.querySelector(".js-button");
-let themeName = document.querySelector(".js-themeName");
-let fontButton = document.querySelector(".js-fontButton");
-let secondThemeName = document.querySelector(".js-secondThemeName");
+{
+    const toggleBackground = () => {
+        const body = document.querySelector(".js-body");
+        const themeName = document.querySelector(".js-themeName");
 
-backgroundColorButton.addEventListener("click", () => {
-    body.classList.toggle("body--dark");
+        body.classList.toggle("body--dark");
+        themeName.innerText = body.classList.contains("body--dark") ? "jasny" : "ciemny";
+    };
 
-    themeName.innerText = body.classList.contains("body--dark") ? "jasny" : "ciemny";
-});
+    const toggleFont = () => {
+        const body = document.querySelector(".js-body");
+        const secondThemeName = document.querySelector(".js-secondThemeName");
 
-fontButton.addEventListener("click", () => {
-    body.classList.toggle("body--fontSize");
-    if (body.classList.contains("body--fontSize")) {
-        secondThemeName.innerText = "Zmniejsz";
-    } else {
-        secondThemeName.innerText = "Zwiększ";
-    }
-});
+        body.classList.toggle("body--fontSize");
+        if (body.classList.contains("body--fontSize")) {
+            secondThemeName.innerText = "Zmniejsz";
+        } else {
+            secondThemeName.innerText = "Zwiększ";
+        };
+    };
 
+    const init = () => {
+        const backgroundColorButton = document.querySelector(".js-button");
+        const fontButton = document.querySelector(".js-fontButton");
+        
+        backgroundColorButton.addEventListener("click", toggleBackground);
+        fontButton.addEventListener("click", toggleFont);
+    };
 
+    init();
+}
