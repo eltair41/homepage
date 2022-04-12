@@ -3,7 +3,7 @@
 ## Table of contents
 - [Demo](#Demo)
 - [General info](#General-info)
-- [Technologies I used](#Technologies-I-used)
+- [Technologies I used](#Technologies/Conventions-I-used)
 
 ## Demo
 https://eltair41.github.io/homepage/
